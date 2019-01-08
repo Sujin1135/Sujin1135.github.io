@@ -75,7 +75,7 @@
 						<div class="row">
 							<div class="input-field col s6">
 								<input id="year" type="text"
-									class="validate" value="26" readonly>
+									class="validate" readonly>
 								<label for="year">Year</label>
 							</div>
 							<div class="input-field col s6">
@@ -361,6 +361,8 @@
 			$('.carousel.carousel-slider').carousel({fullWidth: true});
 			
 			$(document).ready(function() {
+				$(".year").val(new Date().getFullYear() - 1993);
+				
 				reaction();
 				$(window).resize(function() {
 					//창크기 변화 감지
